@@ -1,4 +1,4 @@
-#  Inference-Time Answering Agent for CSE 476
+#  Inference-Time Answering Agent
 
 **Author:** Kenisha Kaushal  
 **Course:** CSE 476 – Natural Language Processing
