@@ -1,4 +1,4 @@
-# 🔍 Inference-Time Answering Agent for CSE 476
+#  Inference-Time Answering Agent for CSE 476
 
 **Author:** Kenisha Kaushal  
 **Course:** CSE 476 – Natural Language Processing
@@ -55,7 +55,7 @@ This design prevents data loss during long-running executions and enables real-t
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 ### Per-Question Processing
 
@@ -80,7 +80,7 @@ When processing the entire test set:
 
 ---
 
-## 🛠️ Setup & Requirements
+##  Setup & Requirements
 
 ### Network Access
 
@@ -106,7 +106,7 @@ pip install --break-system-packages requests
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 ### Option 1: Solve a Single Question
 
@@ -131,7 +131,7 @@ This will:
 
 ---
 
-## 🧪 Development & Evaluation
+##  Development & Evaluation
 
 The agent was developed and evaluated through:
 
@@ -151,7 +151,7 @@ The final implementation reliably generates answers for all questions with high 
 
 ---
 
-## 📘 Key Files
+##  Key Files
 
 | File | Purpose |
 |------|---------|
