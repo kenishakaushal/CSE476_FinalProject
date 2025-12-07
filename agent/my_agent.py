@@ -1,14 +1,5 @@
 #!/usr/bin/env python3
 """
-Agent logic for CSE 476 final project.
-
-This file contains:
-- Model API call helper
-- Prompting logic
-- Answer extraction
-- Batch + concurrent processing
-- Autosave to a partial JSON file
-
 `generate_answer_template.py` will import and call
 `generate_all_answers(questions)` from here.
 """
@@ -23,7 +14,7 @@ from threading import Lock
 
 import requests  # for API calls
 
-# --- Config -------------------------------------------------------------
+#Config
 
 API_KEY = "cse476"
 API_BASE = "http://10.4.58.53:41701/v1"
@@ -36,7 +27,7 @@ SYSTEM_PROMPT = (
     "then give the final answer ONLY as: FINAL ANSWER: <value>"
 )
 
-# --- Model call helpers -------------------------------------------------
+#Model call helpers
 
 
 def call_model_chat_completions(
@@ -114,7 +105,7 @@ def run_agent(question_text: str, max_retries: int = 3) -> str:
     return ""  # Return empty if all retries failed
 
 
-# --- Batch orchestration ------------------------------------------------
+#Batch orchestration
 
 
 def generate_all_answers(
@@ -129,7 +120,7 @@ def generate_all_answers(
     total = len(questions)
     answers: List[Optional[Dict[str, str]]] = [None] * total  # preserve order
 
-    BATCH_SIZE = 10  # how many questions to process concurrently (reduced for reliability)
+    BATCH_SIZE = 10  # how many questions to process concurrently 
     save_lock = Lock()  # for thread-safe partial saves
 
     def save_answers() -> None:
