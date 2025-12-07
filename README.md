@@ -7,7 +7,7 @@ This repository contains a complete implementation of an **inference-time reason
 
 ---
 
-##  Agent Architecture
+## Agent Architecture
 
 All solving logic is implemented in **`my_agent.py`**, which provides the following components:
 
